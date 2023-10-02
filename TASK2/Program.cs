@@ -11,18 +11,19 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("You third number:");
 int c = Convert.ToInt32(Console.ReadLine());
 
-if(a > b $$ a > c)
+if(a > b)
 {
     Console.WriteLine($"max = {a} ");
 }
-if(c > b $$ c > a )
+if(b > c)
 {
-    Console.WriteLine($"max = {c} ");
+    Console.WriteLine($"max = {b} ");
 }
-else
+if(c > a)
 {
-   Console.WriteLine($"max = {b} ");
+    Console.WriteLine($"max = {c}");
 }
+
 
 
 
