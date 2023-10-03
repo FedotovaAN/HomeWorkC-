@@ -5,10 +5,13 @@
 
 Console.WriteLine("Введите целое число N:");
 int n = Convert.ToInt32(Console.ReadLine());
-int m = m % 2 == 0;
-while (m <= n)
+int m = 1;
+if (m <= n)
 {
     Console.WriteLine($"{m++}");
 }
-
+else
+{
+    Console.WriteLine($"нет четных чисел");
+}
 
