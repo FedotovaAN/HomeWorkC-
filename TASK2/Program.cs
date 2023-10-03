@@ -10,19 +10,31 @@ Console.WriteLine("You second number:");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("You third number:");
 int c = Convert.ToInt32(Console.ReadLine());
-int max = a;
-if(b > max)
+
+if(a > b)
+if(a > c)
+{
+    Console.WriteLine($"max = {a} ");
+}
+else
+{
+   Console.WriteLine($"max = {c} "); 
+}   
+if(b > c)
+if(b > a)
 {
     Console.WriteLine($"max = {b} ");
 }
-if(c > max)
+else
+{
+   Console.WriteLine($"max = {a} "); 
+}  
+if(c > b)
+if(c > a)
 {
     Console.WriteLine($"max = {c} ");
 }
-
-
-
-
-
-
-
+else
+{
+   Console.WriteLine($"max = {a} "); 
+}  
